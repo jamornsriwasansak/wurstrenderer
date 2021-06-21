@@ -8,7 +8,7 @@ WurstRenderer is a CPU-based rendering system I made in early 2019. It focuses o
 
 > To avoid accidentally releasing code written by collaborators or sensitive code, all changes after 2019 were removed.
 
-## Main Features:
+## Implemented:
 In this framework, it supports:
 * Real-time viewer
 * Obj importing and partially PBRT importing.
@@ -29,7 +29,7 @@ In this framework, it supports:
 * Homogeneous Volumetric Rendering with Isotropic & Henyey-Greenstein phase functions.
 > Note: It seems that homogeneous volumetric rendering is broken again...
 
-## Flatland?
+## Flatland?:
 Flatland is the world where two-dimensional creatures live in.
 It is quite useful for understanding complicated algorithms.
 It also support a few 2d integrators as well. It simply takes the 3d scene and automatically take a slice along Z-Axis to create 2d scene.
