@@ -4,7 +4,7 @@
 
 ![t1](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/tea.jpg)
 
-WurstRenderer is a CPU-based rendering system I made in early 2019. It focuses on experimentability and readability. All integrators (3d) are compared against reference generated from Mitsuba. The result of convergence plots of all integrators follows the theories.
+WurstRenderer is a CPU-based rendering system I made in early 2019. It focuses on experimentability and readability. All integrators (3d) are compared against reference generated from Mitsuba. The result of convergence plots of all integrators indicates that the implementation is correct.
 
 > To avoid accidentally releasing code written by collaborators or sensitive code, all changes after 2019 were removed.
 
