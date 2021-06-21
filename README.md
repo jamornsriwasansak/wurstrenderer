@@ -1,5 +1,9 @@
 # wurstrenderer (as of 2019)
 
+![t2](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/tonemapped.jpg)
+
+![t1](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/tea.jpg)
+
 WurstRenderer is a CPU-based rendering system I made in early 2019. It focuses on experimentability and readability. All integrators (3d) are compared against reference generated from Mitsuba. The result of convergence plots of all integrators follows the theories.
 
 > To avoid accidentally releasing code written by collaborators or sensitive code, all changes after 2019 were removed.
@@ -36,6 +40,37 @@ For flatland integrator, it can preview path density as well. I found the result
 
 ![pt](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/pt_result.jpg) | ![bdpt](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/bdpt_result.jpg) | ![pt2d](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/pt2d_result.jpg)  | ![visualize](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/visualized.jpg)
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-Path Tracing             | Bidirectional Path Tracing| Path Tracing in Flatland | Path Density Visualization
+Path Tracing NEE + MIS  | Bidirectional Path Tracing| Path Tracing in Flatland | Path Density Visualization
 
 Scene format example:
+```
+{
+    "viewer" : true,
+    "camera" : 
+    {
+        "pos" : [4, 1, -2],
+        "lookat": [-1, 1, 0],
+        "up" : [0, 1, 0],
+        "resolution" : [1024, 512],
+        "fovy": 50
+    },
+    "meshes" : 
+    [
+        {
+            "path" : "fireplace_room/fireplace_room.obj"
+        }
+    ],
+    
+    "render" : [
+        {
+            "integrator" : "nextevent_path_tracer",
+            "output": "pt_result.pfm",
+            "num_spp" : 100
+        },
+        {
+            "integrator" : "bidirectional_path_tracer",
+            "output": "bdpt_result.pfm"
+        }
+    ]
+}
+```
