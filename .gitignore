@@ -5,7 +5,6 @@
 
 # User-specific files
 *.suo
-*.user
 *.userosscache
 *.sln.docstates
 
@@ -318,3 +317,22 @@ ASALocalRun/
 # MSBuild Binary and Structured Log
 *.binlog
 sandbox/
+*.amplxeproj
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+cmake-build-debug/
+cmake-build-release/
+CMakeSettings.json
+
+build/

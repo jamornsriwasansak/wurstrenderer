@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugNoLibs|x64">
+      <Configuration>DebugNoLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FastReleaseNoLibs|x64">
+      <Configuration>FastReleaseNoLibs</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FastRelease|x64">
+      <Configuration>FastRelease</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4753EDBD-DD06-4491-A948-5C5D726585A6}</ProjectGuid>
+    <RootNamespace>wurstrenderer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>wurstrenderer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoLibs|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FastRelease|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FastReleaseNoLibs|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoLibs|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='FastRelease|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='FastReleaseNoLibs|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)sandbox\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoLibs|x64'">
+    <OutDir>$(SolutionDir)sandbox\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)sandbox\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FastRelease|x64'">
+    <OutDir>$(SolutionDir)sandbox\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FastReleaseNoLibs|x64'">
+    <OutDir>$(SolutionDir)sandbox\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)dependencies\vs2017_precompiled\include;$(SolutionDir)dependencies/pbrt-parser\pbrtParser\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions>_ENABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_RESULT_OF_DEPRECATION_WARNING;WURST_OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;embree3.lib;assimp-vc140-mt.lib;pbrtParser_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>"$(SolutionDir)dependencies\lib\*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(LIBTORCH_PATH)/lib;$(SolutionDir)dependencies/vs2017_precompiled/lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y /d $(SolutionDir)dependencies\vs2017_precompiled\bin\*.dll $(SolutionDir)sandbox</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoLibs|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)dependencies\vs2017_precompiled\include;$(SolutionDir)dependencies/pbrt-parser\pbrtParser\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions>_ENABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_RESULT_OF_DEPRECATION_WARNING;WURST_OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;embree3.lib;assimp-vc140-mt.lib;pbrtParser_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>"$(SolutionDir)dependencies\lib\*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependencies/vs2017_precompiled/lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y /d $(SolutionDir)dependencies\vs2017_precompiled\bin\*.dll $(SolutionDir)sandbox</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(LIBTORCH_PATH)/include;$(LIBTORCH_PATH)/include/torch/csrc/api/include;$(SolutionDir)dependencies\vs2017_precompiled\include;$(SolutionDir)dependencies/pbrt-parser\pbrtParser\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions>_ENABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_RESULT_OF_DEPRECATION_WARNING;WURST_OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;c10.lib;c10_cuda.lib;caffe2.lib;caffe2_gpu.lib;torch.lib;embree3.lib;assimp-vc140-mt.lib;pbrtParser_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>"$(SolutionDir)dependencies\lib\*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(LIBTORCH_PATH)/lib;$(SolutionDir)dependencies/vs2017_precompiled/lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y /d $(SolutionDir)dependencies\vs2017_precompiled\bin\*.dll $(SolutionDir)sandbox</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FastRelease|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(LIBTORCH_PATH)/include;$(LIBTORCH_PATH)/include/torch/csrc/api/include;$(SolutionDir)dependencies\vs2017_precompiled\include;$(SolutionDir)dependencies/pbrt-parser\pbrtParser\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions>_ENABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_RESULT_OF_DEPRECATION_WARNING;WURST_OPENGL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;c10.lib;c10_cuda.lib;caffe2.lib;caffe2_gpu.lib;torch.lib;embree3.lib;assimp-vc140-mt.lib;pbrtParser_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>"$(SolutionDir)dependencies\lib\*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(LIBTORCH_PATH)/lib;$(SolutionDir)dependencies/vs2017_precompiled/lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y /d $(SolutionDir)dependencies\vs2017_precompiled\bin\*.dll $(SolutionDir)sandbox</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FastReleaseNoLibs|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)dependencies\vs2017_precompiled\include;$(SolutionDir)dependencies/pbrt-parser\pbrtParser\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PreprocessorDefinitions>_ENABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_RESULT_OF_DEPRECATION_WARNING;WURST_OPENGL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;embree3.lib;assimp-vc140-mt.lib;pbrtParser_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalOptions>"$(SolutionDir)dependencies\lib\*.lib" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependencies/vs2017_precompiled/lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y /d $(SolutionDir)dependencies\vs2017_precompiled\bin\*.dll $(SolutionDir)sandbox</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ext\sobol\sobol.cpp" />
+    <ClCompile Include="ext\stb\stb_image.cpp" />
+    <ClCompile Include="ext\stb\stb_image_write.cpp" />
+    <ClCompile Include="ext\tigr\tigr.cpp" />
+    <ClCompile Include="ext\tinyexr\tinyexr.cc" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="accel\embreeaccel.h" />
+    <ClInclude Include="bsdf\orennayar.h" />
+    <ClInclude Include="bsdf\simplemetal.h" />
+    <ClInclude Include="bsdf\twosided.h" />
+    <ClInclude Include="camera2\circlegrid.h" />
+    <ClInclude Include="camera2\flat.h" />
+    <ClInclude Include="common\camera2.h" />
+    <ClInclude Include="common\doc\csv.h" />
+    <ClInclude Include="common\ltmath.h" />
+    <ClInclude Include="common\math\numericalsolver.h" />
+    <ClInclude Include="common\trimeshvertexiterator.h" />
+    <ClInclude Include="common\hashgrid.h" />
+    <ClInclude Include="common\scopedassign.h" />
+    <ClInclude Include="common\util\tilesgenerator.h" />
+    <ClInclude Include="common\medium.h" />
+    <ClInclude Include="common\mlt.h" />
+    <ClInclude Include="common\bvhnnsearch.h" />
+    <ClInclude Include="common\phase.h" />
+    <ClInclude Include="common\progress.h" />
+    <ClInclude Include="common\subpathsampler.h" />
+    <ClInclude Include="common\util\enum.h" />
+    <ClInclude Include="common\util\envmap.h" />
+    <ClInclude Include="common\util\errorimage.h" />
+    <ClInclude Include="common\util\json.h" />
+    <ClInclude Include="common\util\pbrt.h" />
+    <ClInclude Include="common\util\tensor.h" />
+    <ClInclude Include="common\util\vector.h" />
+    <ClInclude Include="common\visualizer2.h" />
+    <ClInclude Include="common\math\kahan.h" />
+    <ClInclude Include="common\sphericalrepresentation.h" />
+    <ClInclude Include="ext\ghc\filesystem.hpp" />
+    <ClInclude Include="ext\sobol\sobol.h" />
+    <ClInclude Include="ext\tinyexr\tinyexr.h" />
+    <ClInclude Include="geometry\cube.h" />
+    <ClInclude Include="geometry\phongmesh.h" />
+    <ClInclude Include="light\smarealight.h" />
+    <ClInclude Include="medium\homogeneous.h" />
+    <ClInclude Include="misc\georgievbluenoiseditheringmask.h" />
+    <ClInclude Include="pathsampler2\simplesubpathsampler2.h" />
+    <ClInclude Include="pathsampler\generalsubpathsampler.h" />
+    <ClInclude Include="phasefunction\henyengreenstein.h" />
+    <ClInclude Include="phasefunction\isotropic.h" />
+    <ClInclude Include="renderer2\primitivepath2.h" />
+    <ClInclude Include="renderer2\pssmltprimitivepath2.h" />
+    <ClInclude Include="renderer\bidirpath.h" />
+    <ClInclude Include="renderer\dualsubsurface.h" />
+    <ClInclude Include="renderer\glossyprt2002.h" />
+    <ClInclude Include="renderer\lightsplatting.h" />
+    <ClInclude Include="renderer\matrixbidirpath.h" />
+    <ClInclude Include="renderer\photonmap.h" />
+    <ClInclude Include="renderer\diffuseprt.h" />
+    <ClInclude Include="renderer\primitivepath.h" />
+    <ClInclude Include="renderer\pssmltprimitivepath.h" />
+    <ClInclude Include="sampler\sobolsampler.h" />
+    <ClInclude Include="sceneio\meshio\wo3io.h" />
+    <ClInclude Include="sceneio\pbrtparser.h" />
+    <ClInclude Include="sceneio\simple2parser.h" />
+    <ClInclude Include="sphericalrepresentation\equirectangular.h" />
+    <ClInclude Include="sphericalrepresentation\convertutil.h" />
+    <ClInclude Include="sphericalrepresentation\sphericalfibonacci.h" />
+    <ClInclude Include="sphericalrepresentation\sphericalgaussian.h" />
+    <ClInclude Include="sphericalrepresentation\sphericalharmonics.h" />
+    <ClInclude Include="bsdf\lambertdiffuse.h" />
+    <ClInclude Include="bsdf\mixed.h" />
+    <ClInclude Include="bsdf\phong.h" />
+    <ClInclude Include="camera\thinlens.h" />
+    <ClInclude Include="common\bsdf.h" />
+    <ClInclude Include="common\camera.h" />
+    <ClInclude Include="common\cdftable.h" />
+    <ClInclude Include="common\film.h" />
+    <ClInclude Include="common\geometry.h" />
+    <ClInclude Include="common\light.h" />
+    <ClInclude Include="common\math\coordframe.h" />
+    <ClInclude Include="common\math\bound.h" />
+    <ClInclude Include="common\math\local.h" />
+    <ClInclude Include="common\mapping.h" />
+    <ClInclude Include="common\math\math.h" />
+    <ClInclude Include="common\math\matrix4.h" />
+    <ClInclude Include="common\math\scalarmath.h" />
+    <ClInclude Include="common\math\sh.h" />
+    <ClInclude Include="common\math\vecsimd.h" />
+    <ClInclude Include="common\math\vecmath.h" />
+    <ClInclude Include="common\parallel.h" />
+    <ClInclude Include="common\path.h" />
+    <ClInclude Include="common\math\ray.h" />
+    <ClInclude Include="common\renderer.h" />
+    <ClInclude Include="common\rng.h" />
+    <ClInclude Include="common\sampler.h" />
+    <ClInclude Include="common\scene.h" />
+    <ClInclude Include="common\math\spectrum.h" />
+    <ClInclude Include="common\stopwatch.h" />
+    <ClInclude Include="common\texture.h" />
+    <ClInclude Include="common\util\file.h" />
+    <ClInclude Include="common\viewer.h" />
+    <ClInclude Include="ext\json\json.hpp" />
+    <ClInclude Include="geometry\plane.h" />
+    <ClInclude Include="geometry\trianglemesh.h" />
+    <ClInclude Include="sceneio\meshio\assimpio.h" />
+    <ClInclude Include="light\diffusearealight.h" />
+    <ClInclude Include="light\envmap.h" />
+    <ClInclude Include="sceneio\tungstenparser.h" />
+    <ClInclude Include="common\wurst.h" />
+    <ClInclude Include="common\floatimage.h" />
+    <ClInclude Include="common\math\geometrymath.h" />
+    <ClInclude Include="common\math\vecprim.h" />
+    <ClInclude Include="ext\gl\glext.h" />
+    <ClInclude Include="ext\gl\khrplatform.h" />
+    <ClInclude Include="ext\gl\wglext.h" />
+    <ClInclude Include="ext\stb\stb_image.h" />
+    <ClInclude Include="ext\stb\stb_image_write.h" />
+    <ClInclude Include="ext\threadpool\ThreadPool.h" />
+    <ClInclude Include="ext\tigr\tigr.h" />
+    <ClInclude Include="renderer\pathnextevent.h" />
+    <ClInclude Include="renderer\visualizegeomnormal.h" />
+    <ClInclude Include="sampler\randomsampler.h" />
+    <ClInclude Include="texture\checkerboard.h" />
+    <ClInclude Include="texture\constanttexture.h" />
+    <ClInclude Include="texture\imagetexture.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
