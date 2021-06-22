@@ -9,6 +9,7 @@ WurstRenderer is a CPU-based rendering system I made in early 2019. It focuses o
 > To avoid accidentally releasing code written by collaborators or sensitive code, all changes after mid 2019 were removed.
 
 ## Implemented:
+
 In this framework, it supports:
 * Real-time viewer
 * Obj importing and partially PBRT importing.
@@ -76,3 +77,7 @@ Scene format example:
     ]
 }
 ```
+
+## Misc
+It uses its own math library and automatically switch to SIMD if your CPU supports.
+It strictly use double only. The performance is not its forte.
