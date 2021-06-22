@@ -35,6 +35,7 @@ It is quite useful for understanding complicated algorithms.
 The renderer supports two integrators:
 * Flatland Path Tracing
 * Flatland PSSMLT
+
 It simply takes the 3d scene and automatically take a slice along Z-Axis to create a 2d scene.
 
 For flatland integrator, it can preview path density as well. I found it is very helpful for understanding MCMC & path guiding experiments.
