@@ -4,7 +4,7 @@
 
 ![t1](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/tea.jpg)
 
-WurstRenderer is a CPU-based rendering system I made in early 2019. It focuses on experimentability and readability. All integrators (3d) are compared against reference generated from Mitsuba. The result of convergence plots of all integrators indicates that the implementation is correct.
+WurstRenderer is a CPU-based rendering system I made in early 2019. It focuses on experimentability and readability. For instance, the length of the [bidirectional path tracer code](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/renderer/bidirpath.h) is only 430 lines long. All integrators (3d) are compared against reference generated from Mitsuba. The result of convergence plots indicates that the implementation of all integrators is correct.
 
 > To avoid accidentally releasing code written by collaborators or sensitive code, all changes after 2019 were removed.
 
@@ -17,7 +17,7 @@ In this framework, it supports:
 * Modified Phong [[Lafortune and Willems 1994](http://www.lafortune.eu/publications/Phong.html)]
 * Blue Dithering Mask Generation via Simulated Annealing [[Georgiev and Fajardo 2016](https://dl.acm.org/doi/abs/10.1145/2897839.2927430)]
 * Bidirectional Path Tracing [[Veach's thesis 1997](https://graphics.stanford.edu/papers/veach_thesis)]
-* Matrix Bidirectional Path Tracing [[Chaitanya et al. 2018](http://www.cim.mcgill.ca/~derek/files/mbdpt-e.pdf)]
+* Matrix Bidirectional Path Tracing [[Chaitanya et al. 2018](http://www.cim.mcgill.ca/~derek/files/mbdpt-e.pdf)] (haven't verified the correctness yet)
 * Path Tracing Next Event Estimation with MIS [[Veach's thesis 1997](https://graphics.stanford.edu/papers/veach_thesis)]
 * Direct RayTracing of Phong Tessellation [[Ogaki and Tokuyoshi 2011](http://www.jp.square-enix.com/tech/library/pdf/EGSR2011.pdf)]
 * Precomputed Radiance Transfer (Diffuse) [[Sloan et al. 2002](https://sites.fas.harvard.edu/~cs278/papers/prt.pdf)]
