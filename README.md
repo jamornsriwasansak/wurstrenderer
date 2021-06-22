@@ -6,7 +6,7 @@
 
 WurstRenderer is a CPU-based rendering system I made in early 2019. It focuses on experimentability and readability. For instance, the length of the [bidirectional path tracer code](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/src/renderer/bidirpath.h) is only 430 lines long. All integrators (3d) are compared against reference generated from Mitsuba. The result of convergence plots indicates that the implementation of all integrators is correct.
 
-> To avoid accidentally releasing code written by collaborators or sensitive code, all changes after 2019 were removed.
+> To avoid accidentally releasing code written by collaborators or sensitive code, all changes after mid 2019 were removed.
 
 ## Implemented:
 In this framework, it supports:
