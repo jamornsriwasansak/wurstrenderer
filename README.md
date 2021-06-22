@@ -32,7 +32,7 @@ In this framework, it supports:
 ## Flatland?:
 Flatland is the world where two-dimensional creatures live in.
 It is quite useful for understanding complicated algorithms.
-It also support a few 2d integrators as well. It simply takes the 3d scene and automatically take a slice along Z-Axis to create 2d scene.
+It also support a few 2d integrators as well. It simply takes the 3d scene and automatically take a slice along Z-Axis to create a 2d scene.
 * Flatland Path Tracing
 * Flatland PSSMLT
 
