@@ -30,13 +30,14 @@ In this framework, it supports:
 > Note: It seems that homogeneous volumetric rendering is broken again...
 
 ## Flatland?:
-Flatland is the world where two-dimensional creatures live in.
+Flatland is the world where two-dimensional creatures live in. 
 It is quite useful for understanding complicated algorithms.
-It also support a few 2d integrators as well. It simply takes the 3d scene and automatically take a slice along Z-Axis to create a 2d scene.
+The renderer supports two integrators:
 * Flatland Path Tracing
 * Flatland PSSMLT
+It simply takes the 3d scene and automatically take a slice along Z-Axis to create a 2d scene.
 
-For flatland integrator, it can preview path density as well. I found the result was quite useful for understanding MCMC & path guiding experiments.
+For flatland integrator, it can preview path density as well. I found it is very helpful for understanding MCMC & path guiding experiments.
 
 ![pt](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/pt_result.jpg) | ![bdpt](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/bdpt_result.jpg) | ![pt2d](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/pt2d_result.jpg)  | ![visualize](https://github.com/jamornsriwasansak/wurstrenderer/blob/master/readme/visualized.jpg)
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
